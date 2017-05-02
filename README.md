@@ -52,13 +52,19 @@ Additional Commands
 -------------------
 
 ##### stop container
+```
 docker stop jetmysql
+```
 
 ##### remove the container
+```
 docker rm jetmysql
+```
 
 #### attach bash shell
+```
 docker exec -i -t jetmysql /bin/bash
+```
 
 NOTE: stopping the container will not remove any addition rows inserted into the database.
  However, removing the container will reset the database to initial state the next time its started.
